@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <link rel="stylesheet" type="text/css" href="simple.css"/>
+    </head>
+<body>
+
+<h1 style="margin: 0 auto; margin-top: 20px; width:400px; background:#f00; color:#000;  border-radius:25px; padding: 10px">Simple CSS</h1>
+<p></p>
+<p style="margin: 0 auto; width:400px; background:#000; color:#fff;  border-radius:25px; padding: 10px">Such simple. Wow.</p>
+
+<div style="margin: 0 auto; width:800px;" id="example"></div>
+
+<script>
+    var txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+	txt+= "<p>Browser Name: " + navigator.appName + "</p>";
+	txt+= "<p>Browser Version: " + navigator.appVersion + "</p>";
+	txt+= "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+	txt+= "<p>Browser Language: " + navigator.language + "</p>";
+	txt+= "<p>Browser Online: " + navigator.onLine + "</p>";
+	txt+= "<p>Platform: " + navigator.platform + "</p>";
+	txt+= "<p>User-agent header: " + navigator.userAgent + "</p>";
+	txt+= "<p>User-agent language: " + navigator.systemLanguage + "</p>";
+
+	document.getElementById("example").innerHTML=txt;
+</script>
+
+</body>
+</html>
